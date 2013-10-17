@@ -1,0 +1,108 @@
+body{
+    background: #3A3A3A;
+    color:#FFF;
+}
+
+.yellow-color{
+    color:#F1B81E;
+}
+
+.white-color{
+    color:#FFF;
+}
+
+.yellow-bg{
+    background-color: #F1B81E;
+}
+
+.left-bkg{
+    position: absolute;
+}
+
+.right-bkg{
+    left: 30%;
+    position: absolute;
+    width: 70%;
+    height:30px;
+}
+
+h1{
+    font-size:32px;
+}
+
+h2{
+    font-size:28px;
+    color:#F1B81E;
+}
+
+h1 small {
+    font-size: 17px;
+}
+
+.page-header{
+    border:none;
+    margin-top:50px;
+    margin-left:40px;
+}
+
+#logo{
+    width:230px;
+}
+
+.navbar{
+    margin-top:20px;
+}
+
+.navbar .nav,
+.navbar .nav > li {
+  float:none;
+  display:inline-block;
+  *display:inline; /* ie7 fix */
+  *zoom:1; /* hasLayout ie7 trigger */
+  vertical-align: top;
+}
+
+.navbar-inner {
+  text-align:center;
+  background-color: #F1B81E;
+  background-image: -moz-linear-gradient(top, #F1B81E, #FEF969);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#F1B81E), to(#FEF969));
+  background-image: -webkit-linear-gradient(top, #F1B81E, #FEF969);
+  background-image: -o-linear-gradient(top, #F1B81E, #FEF969);
+  background-image: linear-gradient(to bottom, #F1B81E, #FEF969);
+  background-repeat: repeat-x;
+  border: none;
+  -webkit-border-radius: 0px;
+     -moz-border-radius: 0px;
+          border-radius: 0px;
+}
+
+.carousel{
+    width: 80%; 
+    margin: 0 auto;
+}
+
+.carousel-control {
+  background: none;
+  border:none;
+  border-radius: 0px;
+  opacity: 1;
+  width:auto;
+  left:-73px;
+} 
+
+.carousel-control.right{
+    right:-73px;
+}
+
+.carousel-caption p {
+    color: #F1B81E;
+}
+
+.footer{
+    width:100%;
+}
+
+.footer h2{
+    color: #3A3A3A;
+}
