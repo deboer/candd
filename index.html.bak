@@ -56,15 +56,15 @@
 <div class="container navbar_margin">
 	<div class="row">
 		<div class="span3">
-			<img id="logo" src="/img/logo2.png" class="pull-right">
+			<img alt="140x140" src="/img/logo_white.png" class="pull-right">
 		</div>
 		<div class="span9">
 			<div class="row">
+				<div class="span12">
 					<div class="page-header">
-                                    <h1 class="yellow-color pull-left">
-                                            Specialising in <span class="white-color">roof</span> repairs and renewal in Brighton<br/>
-                                            <small class="white-color pull-right">Call us today on<span class="yellow-color"> 07737 909 081</span> to arrange a 
-                                                <span class="yellow-color">FREE</span> estimate or click here to email us!</small>
+						<h1>
+							Specialising in roof repairs and renewal in Brighton
+							<small>Call us today on 07737 909 081 to arrange a FREE estimate or click here to email us!</small>
 						</h1>
 
 					</div>
@@ -72,8 +72,9 @@
 			</div>
 		</div>
 	</div>
+</div>	
 <div class="row">
-	<div class="navbar navbar_margin">
+	<div class="navbar center">
 		<div class="navbar-inner">
 			<ul class="nav">
 				<li class="active"><a href="#">HOME</a></li>
@@ -97,8 +98,6 @@
 					<li data-slide-to="2" data-target="#carousel-789872" class="active">
 					</li>
 				</ol>
-				<div class="carousel-bg-right">&nbsp;</div>
-				<div class="carousel-bg-left">&nbsp;</div>
 				<div class="carousel-inner">
 					<div class="item">
 						<img alt="" src="http://lorempixel.com/1600/500/sports/1">
@@ -133,9 +132,7 @@
 							</p>
 						</div>
 					</div>
-				</div> 
-                                <a data-slide="prev" href="#carousel-789872" class="left carousel-control"><img src="/img/arrow-left.png" /></a> 
-                                <a data-slide="next" href="#carousel-789872" class="right carousel-control"><img src="/img/arrow-right.png" /></a>
+				</div> <a data-slide="prev" href="#carousel-789872" class="left carousel-control">‹</a> <a data-slide="next" href="#carousel-789872" class="right carousel-control">›</a>
 			</div>
 		</div>
 	</div>
@@ -201,9 +198,6 @@
 			</p>
 		</div>
 	</div>
-    </div>
-    <div class="footer yellow-bg">
-        <div class="container">
 	<div class="row">
 		<div class="span3">
 			<h2>
@@ -253,7 +247,6 @@
 			</p>
 		</div>
 	</div>
-</div>
 </div>
 </body>
 </html>
