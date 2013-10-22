@@ -1,6 +1,8 @@
 body{
     background: #3A3A3A;
     color:#FFF;
+	font-family: Cambria, Georgia, serif;
+	
 }
 
 .yellow-color{
@@ -38,8 +40,6 @@ h1 small {
     width:230px;
 }
 
-
-
 .navbar .nav,
 .navbar .nav > li {
   float:none;
@@ -50,18 +50,36 @@ h1 small {
 }
 
 .navbar-inner {
-  text-align:center;
-  background-color: #F1B81E;
-  background-image: -moz-linear-gradient(top, #F1B81E, #FEF969);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#F1B81E), to(#FEF969));
-  background-image: -webkit-linear-gradient(top, #F1B81E, #FEF969);
-  background-image: -o-linear-gradient(top, #F1B81E, #FEF969);
-  background-image: linear-gradient(to bottom, #F1B81E, #FEF969);
-  background-repeat: repeat-x;
-  border: none;
-  -webkit-border-radius: 0px;
-     -moz-border-radius: 0px;
-          border-radius: 0px;
+	text-shadow: none;
+	text-align:center;
+	background: #F1B81E;
+	border: none;
+	-webkit-border-radius: 0px;
+	   -moz-border-radius: 0px;
+			border-radius: 0px;
+}
+
+.navbar .nav > .active > a, 
+.navbar .nav > .active > a:hover, 
+.navbar .nav > .active > a:focus{
+	background-color:transparent;
+	box-shadow: none;
+	text-shadow: none;
+	font-weight:bold;
+}
+
+.navbar .nav > li > a:hover, 
+.navbar .nav > li > a:focus{
+	background-color:transparent;
+	box-shadow: none;
+	text-shadow: none;
+	font-weight:bold;
+}
+
+.navbar .nav > li > a{
+	text-shadow: none;
+	font-size:18px;
+	font-weight:normal;
 }
 
 .carousel{
