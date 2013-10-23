@@ -17,6 +17,19 @@ body{
     background-color: #F1B81E;
 }
 
+a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #F8D881;
+  text-decoration: underline;
+}
+
+
+
 h1{
     font-size:32px;
 }
@@ -28,6 +41,12 @@ h2{
 
 h1 small {
     font-size: 17px;
+}
+
+.yellow-bar{
+	background:#F1B81E;
+	height:1px;
+	margin:10px 0;
 }
 
 .page-header{
@@ -132,8 +151,9 @@ h1 small {
     width:100%;
 }
 
-.footer h2{
+.footer h4{
     color: #3A3A3A;
+	font-weight: normal;
 }
 
 .height10 {
