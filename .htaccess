@@ -1,0 +1,27 @@
+RewriteEngine On
+
+#301
+RewriteRule ^index.\html / [L,R=301]
+RewriteRule ^company.\html /company/ [L,R=301]
+RewriteRule ^estimates.\html /estimates/ [L,R=301]
+RewriteRule ^gallery.\html /gallery/ [L,R=301]
+RewriteRule ^services.\html /services/ [L,R=301]
+RewriteRule ^testimonials.\html /testimonials/ [L,R=301]
+RewriteRule ^valeting.\html /cleaning/ [L,R=301]
+
+#TODO more 301 from current
+
+# Any URL that doesn't contain a dot should contain a trailing slash
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_URI} !(.*)/$
+#RewriteRule ^(.*)$ /$1/ [L,R=301] 
+
+#RewriteRule ^index/$ /?route=index [L,QSA]
+RewriteRule ^index/$ / [L,QSA]
+RewriteRule ^about-us/$ /?route=about_us [L,QSA]
+RewriteRule ^estimates/$ /?route=estimates [L,QSA]
+RewriteRule ^gallery/$ /?route=gallery [L,QSA]
+RewriteRule ^services/$ /?route=services [L,QSA]
+RewriteRule ^testimonials/$ /?route=testimonials [L,QSA]
+RewriteRule ^cleaning/$ /?route=cleaning [L,QSA]
+RewriteRule ^contact/$ /?route=contact [L,QSA]

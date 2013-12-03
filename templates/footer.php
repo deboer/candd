@@ -6,17 +6,15 @@
 					CONTACT
 				</h4>
 				<p>
-					<strong>Doug:</strong> 07737 909 081<br/>
-					<strong>Chad:</strong> 07748 200 875<br/><br/>
-
-					<strong>Address:</strong><br/>
-					64 Staplefield Drive<br/>
-					Brighton<br/>
-					East Sussex<br/>
-					BN2 4RP<br/><br/>
-
-					<strong>Email:</strong> info@canddroofingbrighton.co.uk<br/>
-					<strong>Web:</strong> www.canddroofingbrighton.co.uk
+					<strong>Doug:</strong> <?php echo $config['phone']['main'];?><br/>
+					<strong>Chad:</strong> <?php echo $config['phone']['secondary'];?><br/>
+                    
+                    <address>
+                        <strong>Address:</strong><br/>
+                        <?php echo $config['address'];?>
+                    </address>
+					
+					<strong>Email:</strong> <?php echo $config['email'];?>
 				</p>
 			</div>
 			<div class="span3">
@@ -25,7 +23,7 @@
 				</h4>
 				<p>
 					<ul class="unstyled">
-						<li><a href="">ESTIMATES</a></li>
+						<li><a href="<?php echo Helpers::buildUrl(ROUTE_ESTIMATES); ?>">ESTIMATES</a></li>
 					</ul>
 				</p>
 			</div>
@@ -35,11 +33,11 @@
 				</h4>
 				<p>
 					<ul class="unstyled">
-						<li><a href="">HOME</a></li>
-						<li><a href="">SERVICES</a></li>
-						<li><a href="">ABOUT US</a></li>
-						<li><a href="">GALLERY</a></li>
-						<li><a href="">CONTACT US</a></li>
+						<li><a href="<?php echo Helpers::buildUrl(ROUTE_INDEX); ?>">HOME</a></li>
+						<li><a href="<?php echo Helpers::buildUrl(ROUTE_SERVICES); ?>">SERVICES</a></li>
+						<li><a href="<?php echo Helpers::buildUrl(ROUTE_ABOUT_US); ?>">ABOUT US</a></li>
+						<li><a href="<?php echo Helpers::buildUrl(ROUTE_GALLERY); ?>">GALLERY</a></li>
+						<li><a href="<?php echo Helpers::buildUrl(ROUTE_CONTACT); ?>">CONTACT US</a></li>
 					</ul>	
 				</p>
 			</div>
