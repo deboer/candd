@@ -1,5 +1,6 @@
 body{
-    background: #3A3A3A;
+    /*background: #3A3A3A;*/
+    background: #00263C;
     color:#FFF;
 	font-family: Cambria, Georgia, serif;
 	
@@ -111,6 +112,7 @@ h1 small {
 	text-shadow: none;
 	font-size:18px;
 	font-weight:normal;
+    color: ;
 }
 
 .carousel{
@@ -213,4 +215,9 @@ h1 small {
 
 .phone-name{
 	font-weight:bold;
+}
+
+.required {
+    color: #ff0000;
+    font-size:20px;
 }
