@@ -1,5 +1,4 @@
 <?php
-
 define("TEMPLATES_ROOT", "templates/");
 define("IMAGES_ROOT", "/img");
 define("CONFIG_ROOT", "/config/");
@@ -26,40 +25,70 @@ $config['available_routes'] = array(
 // Get route value to choose appropriate template
 define("ROUTE", (isset($_GET["route"]) ? (in_array($_GET["route"], $config['available_routes']) ? $_GET["route"] : ROUTE_INDEX ) : ROUTE_INDEX ));
 
+include_once(CONFIG_ROOT . "helpers.php");
+$helpers = new Helpers();
+
 $config = array(
     "meta" => array(
         "title" => array(
-            ROUTE_INDEX => "",
-            ROUTE_SERVICES => "",
-            ROUTE_ABOUT_US => "",
-            ROUTE_GALLERY => "",
-            ROUTE_CONTACT => "",
-            ROUTE_ESTIMATES => "",
-            ROUTE_TESTIMONIALS => "",
-            ROUTE_CLEANING => "",
+            ROUTE_INDEX => "C &amp; D Roofing Brighton | All aspects of roofing, Roof renewal, Tiled Roofs, Lead Works, Guttering, Fascia",
+            ROUTE_SERVICES => "C &amp; D Roofing Brighton | All aspects of roofing, Roof renewal, Tiled Roofs, Lead Works, Guttering, Fascia",
+            ROUTE_ABOUT_US => "C &amp; D Roofing Brighton | All aspects of roofing, Roof renewal, Tiled Roofs, Lead Works, Guttering, Fascia",
+            ROUTE_GALLERY => "C &amp; D Roofing Brighton | All aspects of roofing, Roof renewal, Tiled Roofs, Lead Works, Guttering, Fascia",
+            ROUTE_CONTACT => "C &amp; D Roofing Brighton | All aspects of roofing, Roof renewal, Tiled Roofs, Lead Works, Guttering, Fascia",
+            ROUTE_ESTIMATES => "C &amp; D Roofing Brighton | All aspects of roofing, Roof renewal, Tiled Roofs, Lead Works, Guttering, Fascia",
+            ROUTE_TESTIMONIALS => "C &amp; D Roofing Brighton | All aspects of roofing, Roof renewal, Tiled Roofs, Lead Works, Guttering, Fascia",
+            ROUTE_CLEANING => "C &amp; D Roofing Brighton | All aspects of roofing, Roof renewal, Tiled Roofs, Lead Works, Guttering, Fascia",
         ),
         "description" => array(
-            ROUTE_INDEX => "",
-            ROUTE_SERVICES => "",
-            ROUTE_ABOUT_US => "",
-            ROUTE_GALLERY => "",
-            ROUTE_CONTACT => "",
-            ROUTE_ESTIMATES => "",
-            ROUTE_TESTIMONIALS => "",
-            ROUTE_CLEANING => "",
+            ROUTE_INDEX => "C &amp; D Roofing &amp; Property maintenance are roofing contractors in Brighton specialise in all aspects of roofing including tiling and slating, roof repairs",
+            ROUTE_SERVICES => "We provide services of roofing including tiling and slating, roof repairs, felt flat roofs, roof cleaning, lead works, solar panels installation, chimneys.",
+            ROUTE_ABOUT_US => "C &amp; D Roofing &amp; Property Maintenance is a family run business in Brighton with over 35 years experience specialising in domestic roofing.",
+            ROUTE_GALLERY => "C &amp; D Roofing &amp; Property maintenance are roofing contractors in Brighton specialise in all aspects of roofing including tiling and slating, roof repairs",
+            ROUTE_CONTACT => "C &amp; D Roofing &amp; Property maintenance are roofing contractors in Brighton specialise in all aspects of roofing including tiling and slating, roof repairs",
+            ROUTE_ESTIMATES => "C &amp; D Roofing &amp; Property maintenance are roofing contractors in Brighton specialise in all aspects of roofing including tiling and slating, roof repairs",
+            ROUTE_TESTIMONIALS => "Check out our testimonials to see what our previous West and East Sussex clients have said about C &amp; D Roofing &amp; Property maintenance in Brighton.",
+            ROUTE_CLEANING => "Our roof cleaning service is a process which gives your roof a new lease of life, increasing the life span of your roof, and improving appearance of your home.",
         ),
     ),
     "slideshow" => array(
         0 => array(
-            "path"  => ".......png",
-            "label" => "todo",
+            "path"  => "/img/slider/1.jpg",
+            "label" => "Roof Cleaning",
+            "text" => "<a href='".(Helpers::buildUrl(ROUTE_CLEANING))."' class='yellow-color-link'>We specialise in all aspects of roof cleaning</a>",
             ),
+        1 => array(
+            "path"  => "/img/slider/2.jpg",
+            "label" => "Tiling",
+            "text" => "We carry out all aspects of Tilling",
+            ),
+        2 => array(
+            "path"  => "/img/slider/3.jpg",
+            "label" => "Felt Flat Roofs",
+            "text" => "We carry out all aspects of Felt Flat Roofs",
+            ),
+        3 => array(
+            "path"  => "/img/slider/4.jpg",
+            "label" => "Roof Renewals",
+            "text" => "We carry out all aspects of Roof renewal",
+            ),
+        4 => array(
+            "path"  => "/img/slider/5.jpg",
+            "label" => "Velux Windows",
+            "text" => "We install Velux windows",
+            ),
+        5 => array(
+            "path"  => "/img/slider/6.jpg",
+            "label" => "Slates",
+            "text" => "We can renew all types of slate roofs",
+            ),
+        
     ),
     "phone" => array(
         "main"      => "07748 200 875",
         "secondary" => "07737 909 081"
     ),
-    "email" => "jakub.sikora.en@gmail.com",
+    "email" => "info@canddroofingbrighton.co.uk",
     "address" => "
         64 Staplefield Drive<br/>
         Brighton<br/>
@@ -187,9 +216,5 @@ $config = array(
     ),
 );
 
-include_once(CONFIG_ROOT . "helpers.php");
-$helpers = new Helpers();
-
 // Include header
 include_once(TEMPLATES_ROOT . "header.php");
-

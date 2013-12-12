@@ -46,7 +46,11 @@
 					TESTIMONIALS
 				</h4>
 				<p>
-					Check out our testimonials to see what our previous clients have said about us. Click here
+					Check out our testimonials to see what our previous clients have said about us. <br/><a href="<?php echo Helpers::buildUrl(ROUTE_TESTIMONIALS); ?>">Click here</a>
+                    <br/><br/>
+                     <a href="http://www.checkatrade.com/CAndDRoofingAndPropertyMainte" target="_blank">
+                        <img src="http://www.checkatrade.com/Reputation/API/CAndDRoofingAndPropertyMainte.png" alt="Checkatrade information for C & D Roofing & Property Maintenance Ltd" style="width:80%;"/>
+                     </a>
 				</p>
 			</div>
 		</div>
@@ -55,10 +59,8 @@
 			</div>
 			<div class="span6">
 				<p>
-					Project: dd
+					Project: <a target="_blank" rel="follow" href="http://dudz1okdesign.pl/"><img width="36" height="28" style="" alt="DuDz1oKDesign, dudz1ok, design, grafika-tarnów" src="http://www.unia.tarnow.pl/images/dudziokdesign.png"></a><br/>
 					Copyright &copy; C &amp; D Roofing &amp; Property Maintenance, All rights reserved
-
-					Sussex Office: 64 Staplefield Drive, Brighton, East Sussex. BN2 4RP
 				</p>
 			</div>
 		</div>

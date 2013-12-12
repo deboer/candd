@@ -5,8 +5,10 @@
   <title><?php echo $config["meta"]["title"][ROUTE]; ?></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="<?php echo $config["meta"]["description"][ROUTE]; ?>">
-  <meta name="author" content="">
-
+  <meta name="author" content="Jakub Sikora">
+  <meta name="robots" content="FOLLOW" />
+  <meta name="language" content="English" />
+  
 	<!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
 	<!--link rel="stylesheet/less" href="less/responsive.less" type="text/css" /-->
 	<!--script src="js/less-1.3.3.min.js"></script-->
@@ -38,18 +40,26 @@
     <script type="text/javascript">
             $('#galleryLightbox').lightbox();
     </script>
-       
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-43772970-1', 'canddroofingbrighton.co.uk');
+        ga('send', 'pageview');
+
+      </script>	   
         
     
 </head>
-
 <body>
 <div class="navbar navbar-fixed-top">
 	<div class="row yellow-bg height10">&nbsp;</div>	
 	<div class="left-bkg">
 		<svg width="30" height="30" viewBox="0 0 30 30"
 			xmlns="http://www.w3.org/2000/svg" version="1.1">
-		 <polygon fill="#EFBB20" points="0,0 30,0 30,30 30,30" />
+		 <polygon fill="#EFBB20" points="0,0 31,0 31,31 29,30" />
 	   </svg>
 	</div>
 	<div class="right-bkg yellow-bg">
@@ -65,7 +75,7 @@
 <div class="container navbar_margin">
 	<div class="row">
 		<div class="span3">
-			<img id="logo" src="/img/logo2.png" class="pull-right">
+            <a href="/"><img id="logo" src="/img/logo2.png" class="pull-right"></a>
 		</div>
 		<div class="span9">
 			<div class="row">

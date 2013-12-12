@@ -3,75 +3,43 @@
 		<div class="span12">
 			<div class="carousel slide" id="carousel-789872">
 				<ol class="carousel-indicators">
-					<li data-slide-to="0" data-target="#carousel-789872" class="active">
-					</li>
-					<li data-slide-to="1" data-target="#carousel-789872">
-					</li>
-					<li data-slide-to="2" data-target="#carousel-789872" >
-					</li>
-                                        <li data-slide-to="3" data-target="#carousel-789872" >
-					</li>
-                                        <li data-slide-to="4" data-target="#carousel-789872" >
-					</li>
+                    <?php
+                    foreach($config['slideshow'] as $key=>$item)
+                    {
+                        echo '<li data-slide-to="'.$key.'" data-target="#carousel-789872" class="'.($key == 0 ? "active" : null).'"></li>';
+                    }
+//					<li data-slide-to="0" data-target="#carousel-789872" class="active">
+//					</li>
+//					<li data-slide-to="1" data-target="#carousel-789872">
+//					</li>
+//					<li data-slide-to="2" data-target="#carousel-789872" >
+//					</li>
+//                    <li data-slide-to="3" data-target="#carousel-789872" >
+//					</li>
+//                    <li data-slide-to="4" data-target="#carousel-789872" >
+//					</li>
+                    ?>
 				</ol>
 				<div class="carousel-bg-right">&nbsp;</div>
 				<div class="carousel-bg-left">&nbsp;</div>
 				<div class="carousel-inner">
-					<div class="item active">
-						<img alt="" src="/img/slide_1.png">
-						<div class="carousel-caption">
-							<h4>
-								First Thumbnail label
-							</h4>
-							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-							</p>
-						</div>
-					</div>
-					<div class="item">
-						<img alt="" src="/img/slide_2.png">
-						<div class="carousel-caption">
-							<h4>
-								Second Thumbnail label
-							</h4>
-							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-							</p>
-						</div>
-					</div>
-					<div class="item">
-						<img alt="" src="/img/slide_3.png">
-						<div class="carousel-caption">
-							<h4>
-								Third Thumbnail label
-							</h4>
-							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-							</p>
-						</div>
-					</div>
-                                        <div class="item">
-						<img alt="" src="/img/slide_4.png">
-						<div class="carousel-caption">
-							<h4>
-								Third Thumbnail label
-							</h4>
-							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-							</p>
-						</div>
-					</div>
-                                        <div class="item">
-						<img alt="" src="/img/slide_5.png">
-						<div class="carousel-caption">
-							<h4>
-								Third Thumbnail label
-							</h4>
-							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-							</p>
-						</div>
-					</div>
+                    <?php
+                    foreach($config['slideshow'] as $key=>$item)
+                    {
+                        echo '
+                        <div class="item '.($key == 0 ? "active" : null).'">
+                            <img alt="" src="'.$item['path'].'">
+                            <div class="carousel-caption">
+                                <h4>
+                                    '.$item['label'].'
+                                </h4>
+                                <p>
+                                    '.$item['text'].'
+                                </p>
+                            </div>
+                        </div>';
+                    }
+                    ?>
 				</div> 
                 <a data-slide="prev" href="#carousel-789872" class="left carousel-control"><img src="/img/arrow-left.png" /></a> 
                 <a data-slide="next" href="#carousel-789872" class="right carousel-control"><img src="/img/arrow-right.png" /></a>
